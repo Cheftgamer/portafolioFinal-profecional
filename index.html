@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="porta.css">
+  <link rel="icon" href="/imagenes/icono.png" type="imagenes/-.png">
+  <title>Document</title>
+</head>
+<body>
+  <audio autoplay loop playsinline id="audio">
+    <source src="/audio-video/Gamines.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="musica">
+    <div class="ocul-panel">
+      <div class="panel">
+        <button id="btn-ce">X</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Gamines.mp3')">✒️ cancion original</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Salsa Rap.mp3')">💃🏻 salsa rap</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/R.D.L.F..mp3')">📢 R.D.L.F</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Chica Irreal.mp3')">👩🏻 Chica Irreal</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Farandula.mp3')">🍺 Farandula</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Respeto.mp3')">😤 Respeto</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Jerigonza.mp3')">🚨 Jerigonza</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/ILUSTRE CAMARADA.mp3')">🫱🏼‍🫲🏻 Ilustre Camarada</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Criterio.mp3')">😎 Criterio</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/La movie.mp3')">📸 La movie</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/MILO J.mp3')">👗 Milo J</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Micro.mp3')">👑 Micro</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/LA SANTA.mp3')">👼🏻 La Santa</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Déjate Querer.mp3')">♥️ Dejate querer</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/BD NUEVAYOL.mp3')">🏢 NUEVAYOL</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Esclava.mp3')">🥵 Esclava</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Sigues Con Él feat.mp3')">☠︎︎ Sigues con el</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Pa Que La Pases Bien.mp3')">☠︎︎ Paq la pases bien</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Me Prefieres A Mi.mp3')">☠︎︎ Prefiere a mi</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Hace Mucho Tiempo.mp3')">☠︎︎ Hace mucho tiempo</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/La Jumpa.mp3')">☠︎︎ La Jumpa</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/BAILE INoLVIDABLE.mp3')">🐰 Baile inolvidable</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Tu No Metes Cabra (Remix).mp3')">🐰 Tu no metes cabra</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Si Veo a Tu Mamá.mp3')">🐰 Si veo a tu mamá</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/💕🧃 YOGURCITO.mp3')">💕🧃 YOGURCITO</button>
+        <button class="btn-can" onclick="cambiarCancion('proxi.mp3')">proximamente</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="nav-bar">
+    <ul class="nav-bar--container">
+      <li class="nav-bar--item"><span class="nav-bar-span">🏠</span><a href="#inicio" class="nav-bar--link">Inicio</a></li>
+      <li class="nav-bar--item"><span class="nav-bar-span">🧔🏻</span><a href="#sobreM" class="nav-bar--link">Sobre Mí</a></li>
+      <li class="nav-bar--item"><span class="nav-bar-span">📂</span><a href="#proyectos" class="nav-bar--link">Proyectos</a></li>
+      <li class="nav-bar--item"><span class="nav-bar-span">📱</span><a href="#contacto" class="nav-bar--link">Contacto</a></li>
+      |
+      <button class="nav-btn" id="btn-can">🎵</button>
+      <button class="nav-btn" id="audio-control">🔊</button>
+    </ul>
+  </header>
+
+  <main>
+    <div class="info-container" id="inicio">
+      <div class="sub-container">
+        <h2 class="sub-titu">𝓒𝓱𝓮𝓯𝓽_𝓭𝓮𝓿</h2>
+      </div>
+      <p class="text">Desarrollador web y configurador profecional de minecraft</p>
+    </div>
+
+    <section id="sobreM">
+      <div class="sobreM-container">
+        <h1>Sobre mí</h1>
+        <div class="sobreM-wapper">
+          <img src="/imagenes/icono.png" alt="mi imagen de perfil" loading="lazy" class="img-item">
+          <p class="sbreM-text">¡Hola! soy Cheft_dev, un configurador profecional de minecraft con 9 años de experiencia haciendo todo tipo de modalidades.</p>
+          <p class="sbreM-text" id="sbreM-text">Tambien soy programador web y demas haciendo que mis trabajos sean profecionales y limpios segun tus peticiones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="card-container">
+        <div class="card" id="flipCard">
+          <div class="card-face cart-front">
+            <img src="/imagenes/lunar.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+          </div>
+
+          <div class="card-face card-back">
+            <h2 class="titu-h2">Lunarloom</h2>
+            <p class="card-text">Lunarloom es un proyecto pequeño de gran escala</p>
+            <p class="card-text">conteniendo muchas modalidades y un hosting propio</p>
+            <p class="card-text">ya casi sale te dejo la ip</p>
+            <h3 class="card-ip">Ip: lunarloom.fun</h3>
+            <h3 class="card-ip card-puer">Puerto: 19132</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="configs">
+      <div class="card-container">
+        <div class="card configCard">
+          <div class="card-face cart-front">
+            <img src="/imagenes/Ligth.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+          </div>
+
+          <div class="card-face card-configBk">
+            <h2 class="titu-h2">LightChat</h2>
+            <p class="card-text">LightChat es un plugin de chat muy completo</p>
+            <p class="card-text">que integra antispam comandos mas faciles y</p>
+            <p class="card-text">autoresponder ect lo configure muy bien estetico y</p>
+            <p class="card-text card-text2">traducido total mente al español</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container card-containerCon">
+        <div class="card configCard2">
+          <div class="card-face cart-front">
+            <img src="/imagenes/Menu.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+          </div>
+
+          <div class="card-face card-configBk">
+            <h2 class="titu-h2">DeluxeMenu</h2>
+            <p class="card-text">DeluxeMenu es un plugin de menus no tan completo</p>
+            <p class="card-text">como zMenu que usa servidores grandes pero aun asi</p>
+            <p class="card-text">se pueden hacer grandes menus esteticos y bonitos</p>
+            <p class="card-text card-text2">como los que usa karma o mineboom.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container card-containerCon">
+        <div class="card configCard3">
+          <div class="card-face cart-front">
+            <img src="/imagenes/Tab.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+          </div>
+
+          <div class="card-face card-configBk">
+            <h2 class="titu-h2">TAB</h2>
+            <p class="card-text">TAB es un plugin muy usado y conocido</p>
+            <p class="card-text">normalmente se usa para en scorebord y tab</p>
+            <p class="card-text">y con versiones anteriores el belowname es</p>
+            <p class="card-text card-text2">muy util facil de usar y muy estetico</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="form-container">
+        <h2 class="form-item">Contacto</h2>
+        <form action="https://formsubmit.co/tayinwkh@gmail.com" method="POST">
+          <div class="input-en">
+            <input class="one-name" type="text" name="nombre"> <label for="">Nombre</label>
+          </div>
+          <div class="input-en">
+            <input class="two-name" type="text" name="nick de discord"> <label for="">nick de discord</label>
+          </div>
+          <div class="input-en">
+            <input class="email" type="email" name="correo electronico"> <label for="">Email</label>
+          </div>
+          <div class="input-en">
+            <textarea name="informacion" id="" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit">enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="creditos">
+    <span class="creditos-item">&copy; 2025 Cheft_dev</span>
+  </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+        AOS.init({ duration: 800, once: true });
+</script>
+<script src="porta.js"></script>
+</html>
