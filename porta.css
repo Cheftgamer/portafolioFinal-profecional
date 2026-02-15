@@ -40,8 +40,8 @@ a{
     z-index: 1000;
 }
 .btn-can{
-    margin-left: 1%;
-    margin-top: 6px;
+    margin-left: 0%;
+    margin-top: 20px;
     margin-bottom: 6px;
     border: none;
     background: transparent;
@@ -54,7 +54,7 @@ a{
     border-radius: 10px;
     color: #2087fc;
     background: #a1a1a14d;
-    transform: scale(1.2) translateX(20px);
+    transform: scale(1.2) translateX(10px);
 }
 #btn-ce{
     position: fixed;
@@ -403,7 +403,7 @@ button{
     color: #B6B6B6;
 }
 
-@media screen and (min-width: 1111px) {
+@media screen and (min-width: 1284px) {
 body{
     overflow-x: hidden;
 }
@@ -516,5 +516,65 @@ button{
     font-size: 1.4em;
     text-align: center;
     color: #B6B6B6;
+}
+}
+
+@media screen and (min-width: 750px) {
+body{
+    overflow-x: hidden;
+}
+.panel{
+    height: 650px;
+    left: 35%;
+    top: 450px;
+}
+.nav-bar--container{
+    left: 15%;
+}
+.sub-container{
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.text{
+    left: 15%;
+}
+.sobreM-container{
+    margin-top: -130px;
+}
+.card-container{
+    margin-left: 15%;
+}
+.form-container{
+    margin-left: 10%;
+    height: 80vh;
+}
+}
+
+@media screen and (min-width: 1276px) {
+body{
+    overflow-x: hidden;
+}
+.panel{
+    height: 550px;
+}
+.nav-bar--container{
+    left: 35%;
+}
+.sub-container{
+    margin-top: -130px;
+    margin-left: 40%;
+}
+.text{
+    left: 35%;
+}
+.sobreM-container{
+    margin-top: -130px;
+}
+.card-container{
+    margin-left: 35%;
+}
+.form-container{
+    margin-left: 25%;
+    height: 80vh;
 }
 }
