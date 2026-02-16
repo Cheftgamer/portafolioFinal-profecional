@@ -4,45 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="porta.css">
-  <link rel="icon" href="icono.png" type="-.png">
+  <link rel="icon" href="/imagenes/icono.png" type="imagenes/-.png">
   <title>Document</title>
 </head>
 <body>
-  <audio autoplay loop playsinline id="audio">
-    <source src="Gamines.mp3" type="audio/mp3">
+  <div class="contenedor-progreso">
+  <h3 id="titu-can">ESCUCHANDO:</h3><p id="cancion"></p>
+  <span id="tiempoActual">0:00</span>
+  <input type="range" id="barraProgreso" value="0" step="1">
+  <span id="tiempoRestante">-0:00</span>
+  </div>
+  <audio autoplay playsinline id="audio">
+    <source src="/audio-video/Gamines.mp3" type="audio/mp3">
   </audio>
 
   <div id="musica">
     <div class="ocul-panel">
       <div class="panel">
         <button id="btn-ce">X</button>
-        <button class="btn-can" onclick="cambiarCancion('Gamines.mp3')">✒️ cancion original</button>
-        <button class="btn-can" onclick="cambiarCancion('Salsa Rap.mp3')">💃🏻 salsa rap</button>
-        <button class="btn-can" onclick="cambiarCancion('R.D.L.F..mp3')">📢 R.D.L.F</button>
-        <button class="btn-can" onclick="cambiarCancion('NX ESTXS.mp3')">🚬 NX ESTXS</button>
-        <button class="btn-can" onclick="cambiarCancion('Chica Irreal.mp3')">👩🏻 Chica Irreal</button>
-        <button class="btn-can" onclick="cambiarCancion('Farandula.mp3')">🍺 Farandula</button>
-        <button class="btn-can" onclick="cambiarCancion('Respeto.mp3')">😤 Respeto</button>
-        <button class="btn-can" onclick="cambiarCancion('Jerigonza.mp3')">🚨 Jerigonza</button>
-        <button class="btn-can" onclick="cambiarCancion('ILUSTRE CAMARADA.mp3')">🫱🏼‍🫲🏻 Ilustre Camarada</button>
-        <button class="btn-can" onclick="cambiarCancion('Criterio.mp3')">😎 Criterio</button>
-        <button class="btn-can" onclick="cambiarCancion('La movie.mp3')">📸 La movie</button>
-        <button class="btn-can" onclick="cambiarCancion('MILO J.mp3')">👗 Milo J</button>
-        <button class="btn-can" onclick="cambiarCancion('Micro.mp3')">👑 Micro</button>
-        <button class="btn-can" onclick="cambiarCancion('LA SANTA.mp3')">👼🏻 La Santa</button>
-        <button class="btn-can" onclick="cambiarCancion('Déjate Querer.mp3')">♥️ Dejate querer</button>
-        <button class="btn-can" onclick="cambiarCancion('BD NUEVAYOL.mp3')">🏢 NUEVAYOL</button>
-        <button class="btn-can" onclick="cambiarCancion('Esclava.mp3')">🥵 Esclava</button>
-        <button class="btn-can" onclick="cambiarCancion('Sigues Con Él feat.mp3')">☠︎︎ Sigues con el</button>
-        <button class="btn-can" onclick="cambiarCancion('Pa Que La Pases Bien.mp3')">☠︎︎ Paq la pases bien</button>
-        <button class="btn-can" onclick="cambiarCancion('Me Prefieres A Mi.mp3')">☠︎︎ Prefiere a mi</button>
-        <button class="btn-can" onclick="cambiarCancion('Hace Mucho Tiempo.mp3')">☠︎︎ Hace mucho tiempo</button>
-        <button class="btn-can" onclick="cambiarCancion('La Jumpa.mp3')">☠︎︎ La Jumpa</button>
-        <button class="btn-can" onclick="cambiarCancion('BAILE INoLVIDABLE.mp3')">🐰 Baile inolvidable</button>
-        <button class="btn-can" onclick="cambiarCancion('Tu No Metes Cabra (Remix).mp3')">🐰 Tu no metes cabra</button>
-        <button class="btn-can" onclick="cambiarCancion('Si Veo a Tu Mamá.mp3')">🐰 Si veo a tu mamá</button>
-        <button class="btn-can" onclick="cambiarCancion('💕🧃 YOGURCITO.mp3')">💕🧃 YOGURCITO</button>
-        <button class="btn-can" onclick="cambiarCancion('Cuando No Era Cantante.mp3')">🎤 Cuando no era cantante</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Gamines.mp3')">✒️ cancion original</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Salsa Rap.mp3')">💃🏻 salsa rap</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/R.D.L.F..mp3')">📢 R.D.L.F</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/NX ESTXS.mp3')">🚬 NX ESTXS</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Chica Irreal.mp3')">👩🏻 Chica Irreal</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Farandula.mp3')">🍺 Farandula</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Respeto.mp3')">😤 Respeto</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Jerigonza.mp3')">🚨 Jerigonza</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/ILUSTRE CAMARADA.mp3')">🫱🏼‍🫲🏻 Ilustre Camarada</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Criterio.mp3')">😎 Criterio</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/La movie.mp3')">📸 La movie</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/MILO J.mp3')">👗 Milo J</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Micro.mp3')">👑 Micro</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/LA SANTA.mp3')">👼🏻 La Santa</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Déjate Querer.mp3')">♥️ Dejate querer</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/BD NUEVAYOL.mp3')">🏢 NUEVAYOL</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Esclava.mp3')">🥵 Esclava</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Sigues Con Él feat.mp3')">☠︎︎ Sigues con el</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Pa Que La Pases Bien.mp3')">☠︎︎ Paq la pases bien</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Me Prefieres A Mi.mp3')">☠︎︎ Prefiere a mi</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Hace Mucho Tiempo.mp3')">☠︎︎ Hace mucho tiempo</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/La Jumpa.mp3')">☠︎︎ La Jumpa</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/BAILE INoLVIDABLE.mp3')">🐰 Baile inolvidable</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Tu No Metes Cabra (Remix).mp3')">🐰 Tu no metes cabra</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Si Veo a Tu Mamá.mp3')">🐰 Si veo a tu mamá</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/💕🧃 YOGURCITO.mp3')">💕🧃 YOGURCITO</button>
+        <button class="btn-can" onclick="cambiarCancion('/audio-video/Cuando No Era Cantante.mp3')">🎤 Cuando no era cantante</button>
         <button class="btn-can" onclick="cambiarCancion('proxi.mp3')">proximamente</button>
       </div>
     </div>
@@ -57,6 +63,7 @@
       |
       <button class="nav-btn" id="btn-can">🎵</button>
       <button class="nav-btn" id="audio-control">🔊</button>
+      <button class="nav-btn" id="modo-reproduccion">🔁</button>
     </ul>
   </header>
 
@@ -72,7 +79,7 @@
       <div class="sobreM-container">
         <h1>Sobre mí</h1>
         <div class="sobreM-wapper">
-          <img src="icono.png" alt="mi imagen de perfil" loading="lazy" class="img-item">
+          <img src="/imagenes/icono.png" alt="mi imagen de perfil" loading="lazy" class="img-item">
           <p class="sbreM-text">¡Hola! soy Cheft_dev, un configurador profecional de minecraft con 9 años de experiencia haciendo todo tipo de modalidades.</p>
           <p class="sbreM-text" id="sbreM-text">Tambien soy programador web y demas haciendo que mis trabajos sean profecionales y limpios segun tus peticiones.</p>
         </div>
@@ -83,7 +90,7 @@
       <div class="card-container">
         <div class="card" id="flipCard">
           <div class="card-face cart-front">
-            <img src="lunar.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+            <img src="/imagenes/lunar.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
           </div>
 
           <div class="card-face card-back">
@@ -102,7 +109,7 @@
       <div class="card-container">
         <div class="card configCard">
           <div class="card-face cart-front">
-            <img src="Ligth.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+            <img src="/imagenes/Ligth.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
           </div>
 
           <div class="card-face card-configBk">
@@ -118,7 +125,7 @@
       <div class="card-container card-containerCon">
         <div class="card configCard2">
           <div class="card-face cart-front">
-            <img src="Menu.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+            <img src="/imagenes/Menu.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
           </div>
 
           <div class="card-face card-configBk">
@@ -134,7 +141,7 @@
       <div class="card-container card-containerCon">
         <div class="card configCard3">
           <div class="card-face cart-front">
-            <img src="Tab.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
+            <img src="/imagenes/Tab.png" alt="lunarloom proyecto de minecraft" class="card-img" loading="lazy">
           </div>
 
           <div class="card-face card-configBk">
@@ -174,6 +181,9 @@
     <span class="creditos-item">&copy; 2025 Cheft_dev</span>
   </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+        AOS.init({ duration: 800, once: true });
+</script>
 <script src="porta.js"></script>
 </html>
-
