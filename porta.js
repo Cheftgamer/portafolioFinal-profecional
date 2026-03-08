@@ -1,7 +1,7 @@
 const panel = document.querySelector('.panel');
 const oculPanel = document.querySelector('.ocul-panel');
 const ReproductorAuto = document.getElementById('audio');
-const listaCanciones = ["Gamines.mp3", "Salsa Rap.mp3", "R.D.L.F..mp3", "NX ESTXS.mp3", "Chica Irreal.mp3", "Farandula.mp3", "Respeto.mp3", "Jerigonza.mp3", "ILUSTRE CAMARADA.mp3", "Criterio.mp3", "La movie.mp3", "MILO J.mp3", "Micro.mp3", "LA SANTA.mp3", "Déjate Querer.mp3", "BD NUEVAYOL.mp3", "Esclava.mp3", "Sigues Con Él feat.mp3", "Pa Que La Pases Bien.mp3", "Me Prefieres A Mi.mp3", "Hace Mucho Tiempo.mp3", "La Jumpa.mp3", "BAILE INoLVIDABLE.mp3", "Tu No Metes Cabra (Remix).mp3", "Si Veo a Tu Mamá.mp3", "💕🧃 YOGURCITO.mp3", "Cuando No Era Cantante.mp3"];
+const listaCanciones = ["Gamines.mp3", "Salsa Rap.mp3", "R.D.L.F..mp3", "NX ESTXS.mp3", "Chica Irreal.mp3", "Farandula.mp3", "Respeto.mp3", "Jerigonza.mp3", "ILUSTRE CAMARADA.mp3", "Criterio.mp3", "La movie.mp3", "MILO J.mp3", "Micro.mp3", "LA SANTA.mp3", "Déjate Querer.mp3", "BD NUEVAYOL.mp3", "Esclava.mp3", "Sigues Con Él feat.mp3", "Pa Que La Pases Bien.mp3", "Me Prefieres A Mi.mp3", "Hace Mucho Tiempo.mp3", "La Jumpa.mp3", "BAILE INoLVIDABLE.mp3", "Tu No Metes Cabra (Remix).mp3", "Si Veo a Tu Mamá.mp3", "💕🧃 YOGURCITO.mp3", "Cuando No Era Cantante.mp3","Cuando No Era Cantante (normal).mp3","Las Muñequitas.mp3"];
 const TituCancion = document.getElementById('cancion')
 let inceActual = 0;
 const btn = document.getElementById("audio-control");
@@ -208,3 +208,4 @@ configCard2.addEventListener("click", (e)=>{
 configCard3.addEventListener("click", (e)=>{
     configCard3.classList.toggle("flipped");
 });
+
