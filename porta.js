@@ -1,3 +1,11 @@
+type="text/javascript"
+window.$crisp=[];
+window.CRISP_WEBSITE_ID="900570ea-8f87-4785-9ca7-4d6acb174767";
+(function(){
+    d=document;s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";s.async=1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();
 const panel = document.querySelector('.panel');
 const oculPanel = document.querySelector('.ocul-panel');
 const ReproductorAuto = document.getElementById('audio');
