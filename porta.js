@@ -2,14 +2,27 @@ type="text/javascript"
 window.$crisp=[];
 window.CRISP_WEBSITE_ID="900570ea-8f87-4785-9ca7-4d6acb174767";
 (function(){
-    d=document;s=d.createElement("script");
-    s.src="https://client.crisp.chat/l.js";s.async=1;
+    d=document;
+    s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";
+    s.async=1;
     d.getElementsByTagName("head")[0].appendChild(s);
 })();
+function abrirSoporte() {
+    if (typeof $crisp !== 'undefined') {
+        $crisp.push(['do', 'chat:show']);
+        $crisp.push(['do', 'chat:open']);
+    }
+}
+
+$crisp.push(["on", "session:loaded", function(){
+    $crisp.push(['do', 'chat:hide']);
+}]);
 const panel = document.querySelector('.panel');
 const oculPanel = document.querySelector('.ocul-panel');
 const ReproductorAuto = document.getElementById('audio');
 const listaCanciones = ["Gamines.mp3", "Salsa Rap.mp3", "R.D.L.F..mp3", "NX ESTXS.mp3", "Chica Irreal.mp3", "Farandula.mp3", "Respeto.mp3", "Jerigonza.mp3", "ILUSTRE CAMARADA.mp3", "Criterio.mp3", "La movie.mp3", "MILO J.mp3", "Micro.mp3", "LA SANTA.mp3", "Déjate Querer.mp3", "BD NUEVAYOL.mp3", "Esclava.mp3", "Sigues Con Él feat.mp3", "Pa Que La Pases Bien.mp3", "Me Prefieres A Mi.mp3", "Hace Mucho Tiempo.mp3", "La Jumpa.mp3", "BAILE INoLVIDABLE.mp3", "Tu No Metes Cabra (Remix).mp3", "Si Veo a Tu Mamá.mp3", "💕🧃 YOGURCITO.mp3", "Cuando No Era Cantante.mp3","Cuando No Era Cantante (normal).mp3","Las Muñequitas.mp3"];
+const carpeta = '/audio-video/';
 const TituCancion = document.getElementById('cancion')
 let inceActual = 0;
 const btn = document.getElementById("audio-control");
@@ -34,6 +47,7 @@ function Cancion(nombreArchivo){
     TituCancion.innerText = nombreLimpio;
 }
 
+
 btnModo.addEventListener('click', () => {
     if (modoActual === "orden") {
         modoActual = "aleatorio";
@@ -54,6 +68,7 @@ function formatearTiempo(segundos) {
     return `${min}:${seg < 10 ? '0' : ''}${seg}`;
 }
 
+
 ReproductorAuto.addEventListener('ended', () => {
     if (modoActual === "bucle") {
         ReproductorAuto.currentTime = 0;
@@ -66,15 +81,16 @@ ReproductorAuto.addEventListener('ended', () => {
         } while (nuevoIndice === inceActual && listaCanciones.length > 1);
         
         inceActual = nuevoIndice;
-        ReproductorAuto.src = listaCanciones[inceActual];
+        ReproductorAuto.src = carpeta + listaCanciones[inceActual];
         ReproductorAuto.play();
     } 
     else {
+        // Modo por defecto: Orden
         inceActual++;
         if (inceActual >= listaCanciones.length) {
             inceActual = 0;
         }
-        ReproductorAuto.src = listaCanciones[inceActual];
+        ReproductorAuto.src = carpeta + listaCanciones[inceActual];
         ReproductorAuto.play();
     }
     
@@ -147,6 +163,7 @@ window.onclick = (e)=>{
     }
 }
 
+// Funcion de audio
 btn.addEventListener('click', (e)=>{
     let audio = document.getElementById("audio");
 
@@ -216,4 +233,3 @@ configCard2.addEventListener("click", (e)=>{
 configCard3.addEventListener("click", (e)=>{
     configCard3.classList.toggle("flipped");
 });
-
